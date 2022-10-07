@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>if condition</h1>
+        <h2>{% if a < 10 %}</h2>
+            <h3>a value is{{a}}</h3>
+        <h2>{% endif %}</h2>
+
+    <h1>if-else condition</h1>   
+    <h2>{% if a < b %}</h2> 
+        <h3> a value is {{a}}</h3>
+    <h4>{% else %}
+        <h3> b value is {{b}}</h3>
+    <h5>{% endif %}    
+    
+    <h1>if-elif condition</h1>   
+    <h2>{% if a < b %}</h2> 
+        <h3> a value is {{a}}</h3>
+    <h4>{% elif  b < c%}
+        <h3> b value is {{b}}</h3>
+    <h5>{% else %}
+        <h3> c value is {{c}}</h3>    
+    <h6>{% endif %}   
+        
+    <h1>nested-if condition</h1>   
+    <h2>{% if a < b %}</h2> 
+            <h3>{% if a < c %}</h3>
+                <h4>a value is min{{a}}</h4>
+            <h5>{% else %}</h5>
+                <h4>c is min{{c}}</h4>
+            <h6>{% endif %}  
+    <h3>{% else %}
+                <h4>{% if b < c %}
+                    <h5>b is min{{b}}</h5>
+                <h2>{% else %}
+                    <h5>c is min{{c}}</h5>
+                <h6>{% endif %}                     
+    <h5>{% endif %}        
+
+    </center> 
+   
+
+
+</body>
+</html>
